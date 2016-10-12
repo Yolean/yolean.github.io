@@ -17,4 +17,6 @@ RUN apt-get update \
   && apt-get remove -y apt-transport-https lsb-release \
   && rm -r /var/lib/apt/lists/*
 
+VOLUME /usr/src/blog
+
 ENTRYPOINT ["bundle", "exec", "jekyll", "serve", "--host=0.0.0.0"]

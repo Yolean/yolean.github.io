@@ -6,4 +6,15 @@ COPY Gemfile .
 
 RUN bundle install
 
-# https://github.com/jekyll/jekyll-watch
+# Solve: Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes.
+# https://jekyllrb.com/docs/troubleshooting/#could-not-find-a-javascript-runtime-execjsruntimeunavailable
+RUN apt-get update \
+  && apt-get install -y apt-transport-https lsb-release \
+  && curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - \
+  && echo 'deb https://deb.nodesource.com/node_6.x jessie main' > /etc/apt/sources.list.d/nodesource.list \
+  && apt-get update \
+  && apt-get install -y nodejs \
+  && apt-get remove -y apt-transport-https lsb-release \
+  && rm -r /var/lib/apt/lists/*
+
+ENTRYPOINT ["bundle", "exec", "jekyll", "serve", "--host=0.0.0.0"]

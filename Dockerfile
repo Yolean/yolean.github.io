@@ -19,4 +19,4 @@ RUN apt-get update \
 
 VOLUME /usr/src/blog
 
-ENTRYPOINT ["bundle", "exec", "jekyll", "serve", "--host=0.0.0.0"]
+ENTRYPOINT ["bundle", "exec", "jekyll", "serve", "--host=0.0.0.0", "--config=_config.yml,_config.dev.yml"]

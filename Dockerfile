@@ -1,4 +1,4 @@
-FROM ruby
+FROM ruby:2.3@sha256:a6c32bd870fb5a9bd8cba0816750fb62db5283c1f748aa948f856d79c258ab96
 
 RUN mkdir /usr/src/blog
 WORKDIR /usr/src/blog

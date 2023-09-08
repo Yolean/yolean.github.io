@@ -1,0 +1,2 @@
+FROM starefossen/github-pages@sha256:17581c81ba3e96229507a48ac5f492c0fb56a1c4cc7579964b95714660f90d43
+COPY . .

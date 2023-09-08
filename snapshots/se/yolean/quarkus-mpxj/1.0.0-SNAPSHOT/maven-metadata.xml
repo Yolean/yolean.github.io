@@ -3,21 +3,21 @@
   <groupId>se.yolean</groupId>
   <artifactId>quarkus-mpxj</artifactId>
   <versioning>
-    <lastUpdated>20230908120237</lastUpdated>
+    <lastUpdated>20230908135313</lastUpdated>
     <snapshot>
-      <timestamp>20230908.120237</timestamp>
+      <timestamp>20230908.135313</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0.0-20230908.120237-1</value>
-        <updated>20230908120237</updated>
+        <value>1.0.0-20230908.135313-1</value>
+        <updated>20230908135313</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0.0-20230908.120237-1</value>
-        <updated>20230908120237</updated>
+        <value>1.0.0-20230908.135313-1</value>
+        <updated>20230908135313</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

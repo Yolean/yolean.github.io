@@ -27,6 +27,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.version>3.3.1</quarkus.version>
     <surefire-plugin.version>3.0.0</surefire-plugin.version>
+    <project.scm.id>github</project.scm.id>
   </properties>
   <distributionManagement>
     <snapshotRepository>
